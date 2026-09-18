@@ -2,8 +2,10 @@ def add(a, b):
     return a + b
 
 def multiply(a, b):
-        return a * b
+    return a * b
+def sub(a, b):
+    return a - b
 
 print(add(10, 5))
 print(multiply(10, 5))
-print(add(20,8))
+print(sub(20,8))
