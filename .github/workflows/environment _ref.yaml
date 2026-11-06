@@ -10,4 +10,5 @@ jobs:
     steps:
       # 셸 명령어 실행
       - name: Print env
-        run: echo  ${{ vars.MY_ENVIRONMENT }}
+        run: |
+          echo variable: ${{ vars.MY_ENVIRONMENT }}
