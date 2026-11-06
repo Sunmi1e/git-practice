@@ -27,14 +27,14 @@ jobs:
           APP_NAME: MyApplication v2
         run: |
           echo "Application: $APP_NAME"
-      - name: Default Envs
-        run: echo "$GITHUB_REPOSITORY"
-      
+
       - name: Env Overwirte 2
         run: |
           echo "Application: $APP_NAME"
+
       - name: Default Envs
         run: echo "$GITHUB_REPOSITORY"
+      
   test2:
     runs-on: ubuntu-latest
     env:
