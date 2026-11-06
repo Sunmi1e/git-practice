@@ -1,0 +1,13 @@
+name: ENV_REF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 셸 명령어 실행
+      - name: Print env
+        run: echo ${{ env.MY_ENVIRONMENT }}
