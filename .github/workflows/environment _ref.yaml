@@ -10,4 +10,4 @@ jobs:
     steps:
       # 셸 명령어 실행
       - name: Print env
-        run: echo ${{ env.MY_ENVIRONMENT }}
+        run: echo  ${{ vars.MY_ENVIRONMENT }}
