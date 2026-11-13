@@ -17,7 +17,7 @@ jobs:
           RESULT_MISSING: "${{ hashFiles('missing.txt') }}"
         run: printenv | grep '^RESULT_' | sort
       
-      # - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
 
       - name: GitHub File Hash
         env:
