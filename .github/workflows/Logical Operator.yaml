@@ -1,22 +1,15 @@
-
-name: logical operator
+name: Operator Example
 on: workflow_dispatch
-
-env:
-  BOOLEAN_VALUE: true
-  INT_VALUE: 1
-  STRING_VALUE: "sasd"
-  NULL_VALUE: null
-
 jobs:
-  logical operator:
+  operator:
     runs-on: ubuntu-latest
     steps:
-      - name: logical operators
+      # 1. 논리 연산 (Logical Operators)
+      - name: Logical Operators
         run: |
-          echo "and: ${{ true && false }}"
-          echo "or: ${{ true || false }}"
-          echo "not: ${{ !true }}"
+          echo "AND: ${{ true && false }}"
+          echo "OR: ${{ true || false }}"
+          echo "NOT: ${{ !true }}"
 
       - name: Comparison Operators
         run: |
