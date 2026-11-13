@@ -1,0 +1,30 @@
+
+name: logical operator
+on: workflow_dispatch
+
+env:
+  BOOLEAN_VALUE: true
+  INT_VALUE: 1
+  STRING_VALUE: "sasd"
+  NULL_VALUE: null
+
+jobs:
+  logical operator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: logical operators
+        run: |
+          echo "and: ${{ true && false }}"
+          echo "or: ${{ true || false }}"
+          echo "not: ${{ !true }}"
+
+      - name: Comparison Operators
+        run: |
+          echo "Equal: ${{ 10 == 10 }}"
+          echo "Not Equal: ${{ 10 != 20 }}"
+          echo "Greater: ${{ 10 > 5 }}"
+          echo "Less: ${{ 10 < 5 }}"
+          echo "Greater Equal: ${{ 10 >= 10 }}"
+          echo "Less Equal: ${{ 10 <= 20 }}"
+          echo "Type Error: ${{ false == 1 }}"
+

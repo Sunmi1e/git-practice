@@ -1,21 +1,14 @@
-
-name: literal example
-
+name: Literal Example
 on: workflow_dispatch
-
-env:
-  BOOLEAN_VALUE: true
-  INT_VALUE: 1
-  STRING_VALUE: "sasd"
-  NULL_VALUE: null
-
 jobs:
   literal:
     runs-on: ubuntu-latest
     steps:
-      - name: literal test
+      - name: Literal Test
         run: |
-          echo "boolean: ${{ env.BOOLEAN_VALUE }}"
-          echo "int: ${{ env.INT_VALUE }}"
-          echo "string: ${{ env.STRING_VALUE }}"
-          echo "null: ${{ env.NULL_VALUE }}"
+          echo "Boolean: ${{ true }}"
+          echo "Integer: ${{ 100 }}"
+          echo "Float: ${{ 3.14 }}"
+          echo "String: ${{ 'Hello GitHub' }}"
+          echo "String: String can also be written in this form"
+          echo "Null: ${{ null }}"
