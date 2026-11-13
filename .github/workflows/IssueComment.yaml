@@ -1,7 +1,5 @@
 name: Issue Comment Example
-on:
-  issues:
-    types: [opened]
+on: push
 permissions:
   issues: write
 jobs:
