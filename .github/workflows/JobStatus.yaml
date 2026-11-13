@@ -1,4 +1,4 @@
-name: Job Status Example
+name: Condition Workflow
 on: workflow_dispatch
 jobs:
   # 1. guest 계정만 실행 가능
