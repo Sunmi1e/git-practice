@@ -1,0 +1,21 @@
+
+name: literal example
+
+on: workflow_dispatch
+
+env:
+  BOOLEAN_VALUE: true
+  INT_VALUE: 1
+  STRING_VALUE: "sasd"
+  NULL_VALUE: null
+
+jobs:
+  literal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: literal test
+        run: |
+          echo "boolean: ${{ env.BOOLEAN_VALUE }}"
+          echo "int: ${{ env.INT_VALUE }}"
+          echo "string: ${{ env.STRING_VALUE }}"
+          echo "null: ${{ env.NULL_VALUE }}"
